@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark</title>
+    <!-- favicon -->
+    <link rel="icon" href="./images/bookmark.png">
+    <!-- css  -->
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+    
+</head>
+<body>
+    
+<main>
+<div class="container">
+<h1 class="logo text-center mt-5 mb-5 m-auto">Bookmarker</h1>
+
+
+<div class="w-100 mx-auto py-5 form-body d-flex flex-column justify-content-center">
+    <h2 class="mt-1">
+        <i class="fa-solid fa-bookmark"></i>
+         Bookmark your favorite sites
+         <i class="fa-solid fa-bookmark"></i>
+        </h2>
+        <div class="mb-3 mt-5">
+            <label for="siteName" class=" fw-semibold">
+                <i class="fa-solid fa-book-bookmark"></i>
+                Site Name</label>
+            <input type="text" class="form-control mt-2" id="siteName" placeholder="Bookmark Name">
+
+          </div>
+
+          <div class="mb-4">
+            <label for="siteUrl" class=" fw-semibold">
+                <i class="fa-solid fa-link"></i>
+                Site URL</label>
+            <input type="text" class="form-control mt-2" id="siteUrl" placeholder="WebSite URL">
+
+          </div>
+
+          <button class="btn btn-danger text-white border-0 rounded-2 py-2 submit-btn m-auto" onclick="addSite()">Submit</button>
+
+
+
+
+</div>
+<table class="table mt-4 container text-center">
+    <thead>
+      <tr>
+        <th scope="col">Index</th>
+        <th scope="col">Website Name</th>
+        <th scope="col">Visit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody id="table-body">
+
+    </tbody>
+  </table>
+
+</div>
+
+
+
+</main>
+
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>
